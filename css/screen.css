@@ -2079,17 +2079,37 @@ body { font-size: 14px; font-family: Arial, sans-serif; line-height: 1.4; }
 .publication .publication__title a { font-size: 30px; color: #1f1f1f; font-family: "MuseoSansCyrl-300", arial, sans-serif; }
 .publication .publication__title h2 { font-size: 30px; color: #1f1f1f; font-family: "MuseoSansCyrl-300", arial, sans-serif; }
 .publication .publication__content-topper { padding: 25px 0; border-top: 1px solid #eeeeee; border-bottom: 1px solid #eeeeee; background: #f8f8f8; }
-.publication .publication__row { *zoom: 1; position: relative; }
+.publication .publication__row { position: relative; *zoom: 1; }
 .publication .publication__row:after { content: " "; display: table; clear: both; }
 .publication .publication__label { width: 192px; border-right: 1px dotted #eeeeee; float: left; }
 .publication .publication__label:first-child { border-left: 1px solid #eeeeee; }
 .publication .publication__label.is-active { background: #fffdfc; }
-.publication .publication__timeline-wrap { background: #f8f8f8; }
+.publication .publication__timeline-wrap { background: #f8f8f8; border-bottom: 1px solid #eeeeee; }
 .publication .publication__timeline { height: 54px; line-height: 54px; padding: 0px 10px; background: #f8f8f8; color: #202020; font-size: 16px; font-family: "MuseoSansCyrl-500", arial, sans-serif; }
 .publication .publication__left, .publication .publication__right { position: absolute; top: 0; cursor: pointer; }
 .publication .publication__left { left: -25px; background: url('../img/icons-se005d6dddc.png') 0 -123px no-repeat; width: 27px; height: 54px; }
 .publication .publication__right { right: -25px; background: url('../img/icons-se005d6dddc.png') 0 -59px no-repeat; width: 27px; height: 54px; }
-.publication .publication__article { padding: 20px 15px; color: #206794; font-size: 16px; font-family: "MuseoSansCyrl-500", arial, sans-serif; }
-.publication .publication__table, .publication .timeline-table { display: table; width: 100%; margin-bottom: 40px; border-spacing: 0; }
+.publication .publication__article { padding: 8px 12px 12px; color: #206794; font-size: 16px; font-family: "MuseoSansCyrl-500", arial, sans-serif; }
+.publication .publication__article img { margin-top: 10px; }
+.publication .publication__table { border-top: 1px solid #eeeeee; margin-bottom: 46px; }
+.publication .publication__table:first-child { border-top: none; }
+.publication .publication__table, .publication .timeline-table { display: table; width: 100%; border-spacing: 0; }
 .publication .publication__table .publication__table-row, .publication .publication__table .timeline-table-row, .publication .timeline-table .publication__table-row, .publication .timeline-table .timeline-table-row { display: table-row; }
 .publication .publication__table .publication__label, .publication .timeline-table .publication__label { display: table-cell; float: none; }
+.publication .publication__meta { *zoom: 1; }
+.publication .publication__meta:after { content: " "; display: table; clear: both; }
+.publication .publication__meta-title { float: left; font-size: 21px; color: #222222; font-family: "MuseoSansCyrl-300", arial, sans-serif; }
+.publication .publication__meta-state { margin-top: 5px; float: right; font-size: 14px; color: #888888; font-family: "MuseoSansCyrl-300", arial, sans-serif; }
+.publication .publication__meta-state.is-unnactive { color: #d90000; }
+
+.state { margin-bottom: 10px; font-size: 14px; color: #666666; font-family: "MuseoSansCyrl-300", arial, sans-serif; }
+.state.state_draft:before { background: #cccccc; }
+.state.state_matching:before { background: #f4b200; }
+.state.state_accept:before { background: #00b200; }
+.state.state_check:before { background: #005a96; }
+.state.state_reflections:before { background: #77ab3a; }
+.state.state_completion:before { background: #ff8000; }
+.state.state_error:before { background: #ff2626; }
+.state.state_approval:before { background: #c63700; }
+.state:before { content: ""; margin-right: 6px; width: 10px; height: 10px; display: inline-block; vertical-align: middle; }
+.state span { display: inline-block; vertical-align: middle; }

@@ -35,8 +35,9 @@
 		border-bottom: 1px solid #eeeeee
 		background: #f8f8f8 
 	.publication__row
-		+clr
+		// border-top: 1px solid #eeeeee
 		position: relative
+		+clr
 	.publication__label
 		width: 192px
 		border-right: 1px dotted #eeeeee
@@ -44,9 +45,10 @@
 		&:first-child
 			border-left: 1px solid #eeeeee
 		&.is-active
-			background: #fffdfc 
+			background: #fffdfc
 	.publication__timeline-wrap
 		background: #F8F8F8
+		border-bottom: 1px solid #eeeeee
 	.publication__timeline
 		height: 54px
 		line-height: 54px
@@ -66,20 +68,81 @@
 		right: -25px
 		+s(timeline_r)
 	.publication__article
-		padding: 20px 15px
+		padding: 8px 12px 12px
 		color: #206794
 		font-size: 16px
-		+m500 
+		+m500
+		p
+			// margin-bottom: 10px
+		img
+			margin-top: 10px
+	.publication__table
+		border-top: 1px solid #eeeeee
+		margin-bottom: 46px
+		&:first-child
+			border-top: none 
 	.publication__table, .timeline-table
 		display: table
 		width: 100%
-		margin-bottom: 40px
 		border-spacing: 0
 		.publication__table-row, .timeline-table-row
 			display: table-row
 		.publication__label
 			display: table-cell
 			float: none
-		.publication__item
+	.publication__meta
+		+clr
+	.publication__meta-title
+		float: left
+		font-size: 21px
+		color: #222
+		+m300
+	.publication__meta-state
+		margin-top: 5px
+		float: right
+		font-size: 14px
+		color: #888
+		+m300
+		&.is-unnactive
+			color: #D90000 
+.state
+	margin-bottom: 10px
+	font-size: 14px
+	color: #666
+	+m300
+	&.state_draft
+		&:before
+			background: #cccccc
+	&.state_matching
+		&:before
+			background: #f4b200
+	&.state_accept
+		&:before
+			background: #00b200
+	&.state_check
+		&:before
+			background: #005a96
+	&.state_reflections
+		&:before
+			background: #77ab3a
+	&.state_completion
+		&:before
+			background: #ff8000
+	&.state_error
+		&:before
+			background: #FF2626
+	&.state_approval
+		&:before
+			background: #c63700 
+	&:before
+		content: ""
+		margin-right: 6px
+		width: 10px
+		height: 10px
+		display: inline-block
+		vertical-align: middle
+	span
+		display: inline-block
+		vertical-align: middle
 			
 	
