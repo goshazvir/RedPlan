@@ -3,3 +3,83 @@
 
 // Block
 // --------------------------------------------------
+.control
+	display: inline-block
+	vertical-align: middle
+	margin-right: 20px
+	font-size: $font-size-large
+	+m300
+
+.publication
+	.publication__topper
+		padding: 25px 0
+	.publication__title
+		margin-right: 30px
+		display: inline-block
+		vertical-align: middle
+		font-size: 30px
+		color: #1f1f1f
+		+m300
+		letter-spacing: -0.06em
+		a
+			font-size: 30px
+			color: #1f1f1f
+			+m300
+		h2
+			font-size: 30px
+			color: #1f1f1f
+			+m300
+	.publication__content-topper
+		padding: 25px 0
+		border-top: 1px solid #eeeeee
+		border-bottom: 1px solid #eeeeee
+		background: #f8f8f8 
+	.publication__row
+		+clr
+		position: relative
+	.publication__label
+		width: 192px
+		border-right: 1px dotted #eeeeee
+		float: left
+		&:first-child
+			border-left: 1px solid #eeeeee
+		&.is-active
+			background: #fffdfc 
+	.publication__timeline-wrap
+		background: #F8F8F8
+	.publication__timeline
+		height: 54px
+		line-height: 54px
+		padding: 0px 10px
+		background: #F8F8F8
+		color: #202020
+		font-size: 16px 
+		+m500
+	.publication__left, .publication__right
+		position: absolute
+		top: 0
+		cursor: pointer
+	.publication__left
+		left: -25px
+		+s(timeline_l)
+	.publication__right
+		right: -25px
+		+s(timeline_r)
+	.publication__article
+		padding: 20px 15px
+		color: #206794
+		font-size: 16px
+		+m500 
+	.publication__table, .timeline-table
+		display: table
+		width: 100%
+		margin-bottom: 40px
+		border-spacing: 0
+		.publication__table-row, .timeline-table-row
+			display: table-row
+		.publication__label
+			display: table-cell
+			float: none
+		.publication__item
+			
+	

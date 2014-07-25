@@ -18,30 +18,184 @@
 <body>
 
 <div class="out">
-	
-	<!-- Button trigger modal -->
-	<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-	  Launch demo modal
-	</button>
-
-	<!-- Modal -->
-	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-	  <div class="modal-dialog">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-	        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-	      </div>
-	      <div class="modal-body">
-	        ...
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-	        <button type="button" class="btn btn-primary">Save changes</button>
-	      </div>
-	    </div>
-	  </div>
+	<div class="header">
+		<div class="header__in wrap">
+			<div class="container-fluid">
+			  <div class="row">
+			  	<div class="col-md-10">
+						<a href="#" class="logo">RedPlan</a>
+						<button type="button" class="btn btn-default btn-lg btn-account">Соц.аккаунты Афиша-воздух <i class="i-arr"></i></button>
+						<div class="control"><a href="#">Управление</a></div>
+						<div class="control"><a href="#">Активность</a></div>
+			   	</div>
+			   	<div class="col-md-2 text-right">
+			   		<div class="user"><a href="#" class="user__link">Максим Драчев</a></div>
+			   	</div>
+			  </div>
+			</div>
+		</div>
 	</div>
+	<!-- /.header -->
+
+	<div class="publication">
+		<div class="publication__topper">
+			<div class="publication__topper-in wrap">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="publication__title"><h2>Все публикации</h2></div>
+							<!-- Nav tabs -->
+							<ul class="nav nav-tabs nav-buttons" role="tablist">
+							  <li class="active"><a href="#day" role="tab" data-toggle="tab">На день</a></li>
+							  <li><a href="#month" role="tab" data-toggle="tab">На месяц</a></li>
+							</ul>
+						</div>
+						<div class="col-md-6">
+							<div class="publication__topper-right pull-right">
+								<button type="button" class="btn btn-default btn-bullhorn"><i class="ico i-bullhorn"></i></button>
+								<button type="button" class="btn btn-default btn-lg btn_danger">+ Новая публикация</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="publication__content">
+			<div class="publication__content-topper">
+				<div class="wrap">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-12">
+									<button type="button" class="btn btn-default btn-lg btn-datepicker"><span>23 сентября 2014 </span><i class="i-datepicker"></i></button>
+								  <div class="btn-group">
+								    <button type="button" class="btn btn-default btn-lg btn-status dropdown-toggle" data-toggle="dropdown">
+								      Все статусы
+								      <span class="caret caret_right"></span>
+								    </button>
+								    <ul class="dropdown-menu" role="menu">
+								      <li><a href="#">Dropdown link</a></li>
+								      <li><a href="#">Dropdown link</a></li>
+								      <li><a href="#">Dropdown link</a></li>
+								      <li><a href="#">Dropdown link</a></li>
+								      <li><a href="#">Dropdown link</a></li>
+								      <li><a href="#">Dropdown link</a></li>
+								      <li><a href="#">Dropdown link</a></li>
+								      <li><a href="#">Dropdown link</a></li>
+								      <li><a href="#">Dropdown link</a></li>
+								    </ul>
+								  </div>
+							</div>
+						</div>
+					</div>
+				</div> 
+			</div>
+			<div class="publication__content-page">
+				<!-- Tab panes -->
+				<div class="tab-content">
+				  <div class="tab-pane active" id="day">
+				  	<div class="publication__timeline-wrap">
+				  		<div class="wrap">
+				  			<div class="container-fluid">
+				  				<div class="row">
+				  					<div class="col-md-12">
+				  						<div class="publication__row js-publication-timeline">
+				  							<div class="publication__left"></div>
+				  							<div class="publication__right"></div>
+				  							<div class="timeline-table">
+				  								<div class="timeline-table-row">
+				  									<div class="publication__label">
+				  										<div class="publication__timeline">04:12:47</div>
+				  									</div>
+				  									<div class="publication__label">
+				  										<div class="publication__timeline">05:00:30</div>
+				  									</div>
+				  									<div class="publication__label">
+				  										<div class="publication__timeline">10:30:45</div>
+				  									</div>
+				  									<div class="publication__label">
+				  										<div class="publication__timeline">18:20:45</div>
+				  									</div>
+				  									<div class="publication__label">
+				  										<div class="publication__timeline">18:20:45</div>
+				  									</div>
+				  								</div>
+				  							</div>
+				  						</div>
+				  					</div>
+				  				</div>
+				  			</div>
+				  		</div>
+				  	</div>
+				  	<!-- /.timeline -->
+
+				  	<div class="wrap">
+				  		<div class="container-fluid">
+				  			<div class="row">
+				  				<div class="col-md-12">
+				  					<div class="publication__row  publication__table js-publication-items">
+				  						<div class="publication__table-row">
+												<div class="publication__label">
+													<div class="publication__item">
+														<div class="publication__article">
+															
+														</div>
+													</div>
+												</div>
+					  						<div class="publication__label">
+					  							<div class="publication__item">
+					  								<div class="publication__article">
+					  
+					  								</div>
+					  							</div>
+					  						</div>
+					  						<div class="publication__label is-active">
+					  							<div class="publication__item">
+					  								<div class="publication__article">
+					  									<p>Серия текстов о современной руской культуре</p>
+					  								</div>
+					  							</div>
+					  						</div>
+					  						<div class="publication__label">
+					  							<div class="publication__item">
+					  								<div class="publication__article">
+					  						
+					  								</div>
+					  							</div>
+					  						</div>
+					  						<div class="publication__label">
+					  							<div class="publication__item">
+					  								<div class="publication__article">
+					  						
+					  								</div>
+					  							</div>
+					  						</div>
+				  						</div>
+				  					</div>
+				  					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure totam voluptatum, odio beatae minima dicta, quod recusandae ipsum mollitia qui porro harum! Officiis, nisi. Deserunt non in reiciendis animi facere.</p>
+				  				</div>
+				  			</div>
+				  		</div>
+				  	</div>
+				  </div>
+				  <div class="tab-pane" id="month">
+				  	<div class="wrap">
+				  		<div class="container-fluid">
+				  			<div class="row">
+				  				<div class="col-md-12">
+				  					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum corrupti vero sapiente enim reiciendis, a nesciunt magnam ratione facilis. Ullam, explicabo nisi suscipit voluptatem. Tenetur cum dolorum similique ipsa, sapiente!
+				  				</div>
+				  			</div>
+				  		</div>
+				  	</div>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /.publication -->
+	
+
 
 </div>
 <!-- / .out -->

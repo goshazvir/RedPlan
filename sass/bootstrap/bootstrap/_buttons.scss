@@ -14,11 +14,11 @@
   vertical-align: middle;
   cursor: pointer;
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   white-space: nowrap;
   @include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-base, $line-height-base, $border-radius-base);
   @include user-select(none);
-
+  font-family: $font-family-m500;
   &,
   &:active,
   &.active {
@@ -48,6 +48,65 @@
     @include opacity(.65);
     @include box-shadow(none);
   }
+
+  &.btn-account {
+    margin-right: 21px;
+    padding-right: 35px;
+    position: relative;
+    .i-arr {
+      position: absolute;
+      top: 50%;
+      margin-top: -5px;
+      right: 15px;
+    }
+  }
+
+  &.btn-bullhorn {
+    display: inline-block;
+    margin-right: 10px;
+    width: 44px;
+    height: 44px;
+    position: relative;
+    .i-bullhorn {
+      position: absolute;
+      top: 50%;
+      margin-top: -10px;
+      left: 50%;
+      margin-left: -11px;
+    }
+  }
+  &.btn_danger {
+    border-color: #ef5f2a;
+    color: #EF5F2A;
+    &:hover {
+      background: #EF5F2A;
+      border-color: #EF5F2A;
+      color: #fff;
+    }
+  }
+  &.btn-datepicker {
+      margin-right: 6px;
+      padding: 7px 15px;
+    span {
+      margin-right: 12px;
+    }
+    .i-datepicker {
+      position: relative;
+      right: -4px;
+      bottom: 2px;
+    }
+  }
+  &.btn-status {
+    width: 221px;
+    padding: 7px 15px;
+    text-align: left;
+    position: relative;
+    .caret_right {
+      position: absolute;
+      right: 13px;
+      top: 13px;
+    }
+  }
 }
 
 
@@ -76,8 +135,6 @@
 .btn-danger {
   @include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border);
 }
-
-
 // Link buttons
 // -------------------------
 

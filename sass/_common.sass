@@ -3,14 +3,45 @@
 
 // Fonts
 // --------------------------------------------------
++font(MuseoSansCyrl-300, MuseoSansCyrl-300)
+=m300
+	font-family: "MuseoSansCyrl-300", arial, sans-serif
 
++font(MuseoSansCyrl-300Italic, MuseoSansCyrl-300Italic)
+=mi300
+	font-family: "MuseoSansCyrl-300Italic", arial, sans-serif
+
++font(MuseoSansCyrl-500, MuseoSansCyrl-500)
+=m500
+	font-family: "MuseoSansCyrl-500", arial, sans-serif
+	
++font(MuseoSansCyrl-500Italic, MuseoSansCyrl-500Italic)
+=mi500
+	font-family: "MuseoSansCyrl-500Italic", arial, sans-serif
 // Variables & mixins & extend
 // --------------------------------------------------
-// $color-red: red
-// $color-blue: blue
+// $gray: #eee
+// $dgray: #888
 
-// etc
+.wrap
+	width: 990px
+	margin-left: auto
+	margin-right: auto
+%wrap
+	width: 990px
+	margin-left: auto
+	margin-right: auto
 
+.i-arr
+	display: inline-block
+	+arr(5,10, $gray-light, right)
+.i-bullhorn
+	display: inline-block
+	+s(i-bullhorn)
+.i-datepicker
+	display: inline-block
+	vertical-align: middle
+	+s(i-datepicker)
 // Common blocks
 // --------------------------------------------------
 body
@@ -25,6 +56,25 @@ body
 
 // Header
 // --------------------------------------------------
+.header
+	border-bottom: 1px solid $gray-lighter
+	.header__in
+		padding: 15px 0
 
+.logo
+	margin-right: 11px
+	display: inline-block
+	vertical-align: middle
+	+s(logo)
+	+hide-text
+.user
+	height: 43px
+	line-height: 43px
+	display: inline-block
+	vertical-align: middle
+	.user__link
+		+m300
+		font-size: $font-size-large
+		color: $gray-light 
 // Footer
 // --------------------------------------------------

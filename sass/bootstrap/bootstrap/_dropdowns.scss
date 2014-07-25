@@ -13,6 +13,14 @@
   border-top:   $caret-width-base solid;
   border-right: $caret-width-base solid transparent;
   border-left:  $caret-width-base solid transparent;
+  &.caret_right{
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 5px 0 5px 5px !important;
+    border-color: transparent transparent transparent #777777;
+  }
 }
 
 // The dropdown wrapper (div)

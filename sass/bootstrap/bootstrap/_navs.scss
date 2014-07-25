@@ -75,6 +75,38 @@
 // Give the tabs something to sit on
 .nav-tabs {
   border-bottom: 1px solid $nav-tabs-border-color;
+  &.nav-buttons {
+    display: inline-block;
+    vertical-align: middle;
+    border: 2px solid #eeeeee;
+    border-radius: 6px;
+    > li {
+       &.active {
+         margin-bottom: 0;
+       }
+      > a {
+        padding: 9px 15px;
+        margin-right: 0;
+        border-radius: 0;
+        border: none;
+        background: transparent;
+        color: #222;
+        font-family: $font-family-m500;
+        font-size: 16px;
+      }
+      &.active > a {
+        &,
+        &:hover,
+        &:focus {
+          border: none;
+          background: transparent;
+          
+          background: #eeeeee;
+          color: #878787;
+        }
+      }
+    }
+  }
   > li {
     float: left;
     // Make the list-items overlay the bottom border
