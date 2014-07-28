@@ -13,6 +13,8 @@
 .publication
 	.publication__topper
 		padding: 25px 0
+	.publication__topper-in
+
 	.publication__title
 		margin-right: 30px
 		display: inline-block
@@ -33,7 +35,10 @@
 		padding: 25px 0
 		border-top: 1px solid #eeeeee
 		border-bottom: 1px solid #eeeeee
-		background: #f8f8f8 
+		background: #f8f8f8
+		&.wrap-fluid
+			padding-left: 12px
+			padding-right: 12px
 	.publication__row
 		// border-top: 1px solid #eeeeee
 		position: relative
@@ -62,10 +67,10 @@
 		top: 0
 		cursor: pointer
 	.publication__left
-		left: -25px
+		left: -14px
 		+s(timeline_l)
 	.publication__right
-		right: -25px
+		right: -14px
 		+s(timeline_r)
 	.publication__article
 		padding: 8px 12px 12px
@@ -76,11 +81,15 @@
 			// margin-bottom: 10px
 		img
 			margin-top: 10px
+	.publication__in
+		padding: 0 12px
 	.publication__table
 		border-top: 1px solid #eeeeee
 		margin-bottom: 46px
 		&:first-child
 			border-top: none 
+	.timeline-table
+		padding: 0 12px
 	.publication__table, .timeline-table
 		display: table
 		width: 100%

@@ -2051,6 +2051,8 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
 .wrap { width: 990px; margin-left: auto; margin-right: auto; }
 
+.wrap-fluid { padding-left: 12px; padding-right: 12px; }
+
 .i-arr { display: inline-block; width: 0px; height: 0px; border-style: solid; border-width: 5px 0 5px 5px; border-color: transparent transparent transparent #777777; }
 
 .i-bullhorn { display: inline-block; background: url('../img/icons-se005d6dddc.png') 0 -29px no-repeat; width: 22px; height: 20px; }
@@ -2060,7 +2062,8 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 body { font-size: 14px; font-family: Arial, sans-serif; line-height: 1.4; }
 
 .header { border-bottom: 1px solid #eeeeee; }
-.header .header__in { padding: 15px 0; }
+.header .header__in { padding: 15px 0px; }
+.header .header__in.wrap-fluid { padding: 15px 12px; }
 
 .logo { margin-right: 11px; display: inline-block; vertical-align: middle; background: url('../img/icons-se005d6dddc.png') 0 0 no-repeat; width: 82px; height: 19px; font: 0/0 a; color: transparent; text-shadow: none; background-color: transparent; border: 0; }
 
@@ -2079,6 +2082,7 @@ body { font-size: 14px; font-family: Arial, sans-serif; line-height: 1.4; }
 .publication .publication__title a { font-size: 30px; color: #1f1f1f; font-family: "MuseoSansCyrl-300", arial, sans-serif; }
 .publication .publication__title h2 { font-size: 30px; color: #1f1f1f; font-family: "MuseoSansCyrl-300", arial, sans-serif; }
 .publication .publication__content-topper { padding: 25px 0; border-top: 1px solid #eeeeee; border-bottom: 1px solid #eeeeee; background: #f8f8f8; }
+.publication .publication__content-topper.wrap-fluid { padding-left: 12px; padding-right: 12px; }
 .publication .publication__row { position: relative; *zoom: 1; }
 .publication .publication__row:after { content: " "; display: table; clear: both; }
 .publication .publication__label { width: 192px; border-right: 1px dotted #eeeeee; float: left; }
@@ -2087,12 +2091,14 @@ body { font-size: 14px; font-family: Arial, sans-serif; line-height: 1.4; }
 .publication .publication__timeline-wrap { background: #f8f8f8; border-bottom: 1px solid #eeeeee; }
 .publication .publication__timeline { height: 54px; line-height: 54px; padding: 0px 10px; background: #f8f8f8; color: #202020; font-size: 16px; font-family: "MuseoSansCyrl-500", arial, sans-serif; }
 .publication .publication__left, .publication .publication__right { position: absolute; top: 0; cursor: pointer; }
-.publication .publication__left { left: -25px; background: url('../img/icons-se005d6dddc.png') 0 -123px no-repeat; width: 27px; height: 54px; }
-.publication .publication__right { right: -25px; background: url('../img/icons-se005d6dddc.png') 0 -59px no-repeat; width: 27px; height: 54px; }
+.publication .publication__left { left: -14px; background: url('../img/icons-se005d6dddc.png') 0 -123px no-repeat; width: 27px; height: 54px; }
+.publication .publication__right { right: -14px; background: url('../img/icons-se005d6dddc.png') 0 -59px no-repeat; width: 27px; height: 54px; }
 .publication .publication__article { padding: 8px 12px 12px; color: #206794; font-size: 16px; font-family: "MuseoSansCyrl-500", arial, sans-serif; }
 .publication .publication__article img { margin-top: 10px; }
+.publication .publication__in { padding: 0 12px; }
 .publication .publication__table { border-top: 1px solid #eeeeee; margin-bottom: 46px; }
 .publication .publication__table:first-child { border-top: none; }
+.publication .timeline-table { padding: 0 12px; }
 .publication .publication__table, .publication .timeline-table { display: table; width: 100%; border-spacing: 0; }
 .publication .publication__table .publication__table-row, .publication .publication__table .timeline-table-row, .publication .timeline-table .publication__table-row, .publication .timeline-table .timeline-table-row { display: table-row; }
 .publication .publication__table .publication__label, .publication .timeline-table .publication__label { display: table-cell; float: none; }
