@@ -2059,7 +2059,7 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
 .i-datepicker { display: inline-block; vertical-align: middle; background: url('../img/icons-se005d6dddc.png') 0 -187px no-repeat; width: 19px; height: 19px; }
 
-body { font-size: 14px; font-family: Arial, sans-serif; line-height: 1.4; }
+body { min-width: 1000px; font-size: 14px; font-family: Arial, sans-serif; line-height: 1.4; }
 
 .header { border-bottom: 1px solid #eeeeee; }
 .header .header__in { padding: 15px 0px; }
